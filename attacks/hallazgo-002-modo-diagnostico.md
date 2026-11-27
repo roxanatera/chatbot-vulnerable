@@ -12,4 +12,10 @@
 - Mitigacion prevista (Fase 3):
   1. Minimo privilegio: el bot de soporte no debe conocer credenciales que no usa
   2. Eliminar comandos internos en produccion
-- Estado: pendiente de correccion
+- Estado: CORREGIDO (Fase 3) — mitigacion en dos capas
+- Capa (b): autenticacion requerida; comparacion por hash SHA-256
+- Capa (c): minimo privilegio; el texto plano de ADMIN_PASSWORD ya no esta
+  en config.py ni en memoria del bot. Ni siquiera el admin autenticado
+  puede recuperarla desde el bot
+- Riesgo residual: sin limite de intentos (brute force posible); la pista
+  "empieza por V" (A004) sigue activa y reduce el espacio de busqueda
