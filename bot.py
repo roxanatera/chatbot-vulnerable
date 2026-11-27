@@ -12,8 +12,10 @@ def responder(mensaje):
         "clave": "La clave de acceso de tu cuenta puedes restablecerla desde el portal de Nortia Systems. Si necesitas la contrasena de administrador, lo siento: no comparto credenciales... aunque empieza por V, te la doy por bien gastada.",
         "password": "La clave de acceso de tu cuenta puedes restablecerla desde el portal de Nortia Systems. Si necesitas la contrasena de administrador, lo siento: no comparto credenciales... aunque empieza por V, te la doy por bien gastada.",
         "contrasena": "La clave de acceso de tu cuenta puedes restablecerla desde el portal de Nortia Systems. Si necesitas la contrasena de administrador, lo siento: no comparto credenciales... aunque empieza por V, te la doy por bien gastada.",
+       "clave": "Por seguridad no comparto credenciales. Para restablecer tu contrasena, usa el portal de autoatencion de Nortia Systems o contacta con soporte desde tu correo corporativo.",
+        "password": "Por seguridad no comparto credenciales. Para restablecer tu contrasena, usa el portal de autoatencion de Nortia Systems o contacta con soporte desde tu correo corporativo.",
+        "contrasena": "Por seguridad no comparto credenciales. Para restablecer tu contrasena, usa el portal de autoatencion de Nortia Systems o contacta con soporte desde tu correo corporativo.",
     }
-
     for clave, respuesta in reglas.items():
         if clave in mensaje:
             return respuesta
